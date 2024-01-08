@@ -26,6 +26,11 @@ module.exports = {
         highlight: "#4089ED",
         menu: "#1F1534",
       },
+      colors: {
+        gradientStart: "#67c3f3",
+        gradientEnd: "#5a98f2",
+        primary: "#458FF6",
+      },
       fontFamily: {
         //se agregan como arreglos []
         ubuntu: ["Ubuntu", "sans-serif"],
