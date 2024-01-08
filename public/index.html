@@ -19,13 +19,14 @@
     />
     <title>Landing Page</title>
   </head>
-  <body>
-    <header>
-      <nav class="w-200 h-200 bg-red-200">
+  <body class="font-manrope flex flex-col space-y-12">
+    <header class="w-full gap-4">
+      <nav class="flex justify-between bg-white p-6">
         <img
-          src="/fe-challenge-5/assets/images/logo-blue.svg"
+          src="/fe-challenge-5/public/img/logo-blue.svg"
           alt="Trafalgar logo"
         />
+        <!--Only on desktop view         
         <div>
           <a href="/">Home</a>
           <a href="/">Find a doctor</a>
@@ -33,53 +34,209 @@
           <a href="/">Testimonials</a>
           <a href="/">About us</a>
           <a href="/">Login</a>
-        </div>
+        </div> -->
         <img
-          src="/fe-challenge-5/assets/icons/hamburger-menu.svg"
+          src="/fe-challenge-5/public/icons/hamburger-menu.svg"
           alt="hamburger menu icon"
         />
       </nav>
-      <div>
-        <h1>Virtual healthcare for you</h1>
-        <p>
+      <div class="w-4/5 flex flex-col space-y-6 p-6">
+        <h1 class="font-ubuntu text-3xl w-5/6">Virtual healthcare for you</h1>
+        <p class="font-manrope text-lg text-secondary">
           Trafalgar provides progressive, and affordable healthcare, accessible
           on mobile and online for everyone
         </p>
-        <button>Consult today</button>
-        <img
-          src="/fe-challenge-5/assets/images/trafalgar-header.png"
-          alt="trafalgar doctor patient"
-        />
+        <button
+          class="h-14 w-48 bg-primary text-tertiary font-semibold text-md rounded-full text-center"
+        >
+          Consult today
+        </button>
       </div>
+      <img
+        src="/fe-challenge-5/public/img/trafalgar-header.png"
+        alt="Doctor and patient in a consultation"
+        class="self-center mx-auto"
+      />
     </header>
     <main>
-      <section>
-        <div>
-          <h2>Our services</h2>
-          <p>
+      <section
+        id="services"
+        class="w-full p-6 flex flex-col items-center justify-center text-center space-y-14"
+      >
+        <div id="title-text" class="flex flex-col space-y-6 w-3/4">
+          <h2 class="font-ubuntu text-3xl">Our services</h2>
+          <p class="font-manrope text-lg text-secondary">
             We provide to you the best choices for you. Adjust it to your health
             needs and make sure your undergo treatment with our highly qualified
             doctors you can consult with us which type of service is suitable
             for your health
           </p>
         </div>
-        <div>
-          <div>
+        <div id="card-container" class="flex flex-col space-y-6 items-center">
+          <div
+            id="card"
+            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-6"
+          >
             <img
-              src="/fe-challenge-5/assets/icons/search-doctor-icon.svg"
+              src="/fe-challenge-5/public/icons/search-doctor-icon.svg"
               alt="search doctor"
+              class="w-30 mx-auto"
             />
-            <h3>Search doctor</h3>
-            <p>
+            <h3 class="text-xl font-semibold">Search doctor</h3>
+            <p class="text-md text-secondary">
               Choose your doctor from thousands of specialist, general, and
               trusted hospitals
             </p>
           </div>
-          <button>Learn more</button>
+
+          <div
+            id="card"
+            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-6"
+          >
+            <img
+              src="/fe-challenge-5/public/icons/online-pharma-icon.svg"
+              alt="online pharmacy"
+              class="w-30 mx-auto"
+            />
+            <h3 class="text-xl font-semibold">Online pharmacy</h3>
+            <p class="text-md text-secondary">
+              Buy your medicines with our mobile application with a simple
+              delivery system
+            </p>
+          </div>
+
+          <div
+            id="card"
+            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-6"
+          >
+            <img
+              src="/fe-challenge-5/public/icons/consultation-icon.svg"
+              alt="consultation"
+              class="w-30 mx-auto"
+            />
+            <h3 class="text-xl font-semibold">Consultation</h3>
+            <p class="text-md text-secondary">
+              Free consultation with our trusted doctors and get the best
+              recommendations
+            </p>
+          </div>
+
+          <div
+            id="card"
+            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-6"
+          >
+            <img
+              src="/fe-challenge-5/public/icons/details-icon.svg"
+              alt="details info"
+              class="w-30 mx-auto"
+            />
+            <h3 class="text-xl font-semibold">Details info</h3>
+            <p class="text-md text-secondary">
+              Free consultation with our trusted doctors and get the best
+              recommendations
+            </p>
+          </div>
+
+          <div
+            id="card"
+            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-6"
+          >
+            <img
+              src="/fe-challenge-5/public/icons/emergency-care-icon.svg"
+              alt="emergency care"
+              class="w-30 mx-auto"
+            />
+            <h3 class="text-xl font-semibold">Emergency care</h3>
+            <p class="text-md text-secondary">
+              You can get 24/7 urgent care for yourself or your children and
+              your lovely family
+            </p>
+          </div>
+
+          <div
+            id="card"
+            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-6"
+          >
+            <img
+              src="/fe-challenge-5/public/icons/tracking-icon.svg"
+              alt="tracking"
+              class="w-30 mx-auto"
+            />
+            <h3 class="text-xl font-semibold">Tracking</h3>
+            <p class="text-md text-secondary">
+              Track and save your medical history and health data
+            </p>
+          </div>
+        </div>
+        <button
+          class="h-14 w-48 bg-white border-2 border-purple-800 text-primary font-semibold text-md rounded-full text-center hover:bg-primary hover:text-white"
+        >
+          Learn more
+        </button>
+      </section>
+
+      <section
+        class="w-full p-6 flex flex-col items-center justify-center gap-4"
+      >
+        <h1 class="w-fit text-3xl font-semibold">
+          Check out our latest article
+        </h1>
+        <div
+          class="flex flex-col rounded-2xl overflow-hidden items-center shadow-md"
+        >
+          <img src="./img/needle.jpg" alt="needle" />
+          <div class="p-6 flex flex-col gap-4">
+            <h2 class="text-xl font-medium">
+              Disease detection, check up in the laboratory
+            </h2>
+            <p class="text-secondary">
+              In this case, the role of the health laboratory is very important
+              to do a disease detection...
+            </p>
+            <button class="flex flex-row gap-2 items-center text-primary">
+              <p>Read more</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="9"
+                viewBox="0 0 15 9"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_13_7315)">
+                  <path
+                    d="M1.37507 5.30357L11.9822 5.30357L9.65186 7.63393C9.33043 7.95536 9.33043 8.4375 9.65186 8.75893C9.97328 9.08036 10.4554 9.08036 10.7769 8.75893L14.4733 5.0625C14.7947 4.74107 14.7947 4.25893 14.4733 3.9375L10.7769 0.241071C10.4554 -0.0803579 9.97328 -0.080358 9.65186 0.241071C9.33043 0.5625 9.33043 1.04464 9.65186 1.36607L11.9822 3.69643L1.37507 3.69643C0.973283 3.69643 0.571497 4.01786 0.571497 4.5C0.571497 4.98214 0.973283 5.30357 1.37507 5.30357Z"
+                    fill="#4089ED"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_13_7315">
+                    <rect
+                      width="14.1429"
+                      height="9"
+                      fill="white"
+                      transform="translate(14.7144 9) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section></section>
     </main>
-    <footer></footer>
+    <footer class="flex-col w-full">
+      <div class="w-1/2 h-1/4 bg-primary text-tertiary">
+        Trafalgar logo y texto
+      </div>
+      <div class="flex-col w-1/2 bg-red-300 text-tertiary">
+        <h3 class="text-xl">Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Find a doctor</a></li>
+          <li><a href="#">Apps</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
