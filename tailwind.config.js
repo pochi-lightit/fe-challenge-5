@@ -15,10 +15,10 @@ module.exports = {
         dots_5x5: "url('../img/dots-5x5.svg')",
       },
       //defino los colores que voy a usar en el proyecto, importando los disponibles en tailwind (...theme('colors')) y agregando otros:
-      backgroundColor: (theme) => ({
-        ...theme("colors"),
+      backgroundColor: {
         primary: "#458FF6",
-      }),
+      },
+      //no hace falta aclarar por background color, text color etc... sólo con colors se aplica a todas las clases
       textColor: {
         primary: "#458FF6",
         secondary: "#7D7987",
@@ -33,6 +33,7 @@ module.exports = {
       },
       fontFamily: {
         //se agregan como arreglos []
+        //csmbiar los nombres del fontFamily según el uso que se haga de cada tipografia (primary, secondary, etc)
         ubuntu: ["Ubuntu", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
         mulish: ["Mulish", "sans-serif"],

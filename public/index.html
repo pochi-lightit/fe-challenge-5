@@ -63,7 +63,7 @@
     <main class="flex flex-col space-y-10 relative z-10 md:w-3/4 md:mx-auto">
       <section
         id="services"
-        class="w-full p-6 flex flex-col items-center justify-center text-center space-y-10 relative z-10"
+        class="w-full p-6 flex flex-col items-center justify-center text-center space-y-14 relative z-10"
       >
         <!-- Mobile background images -->
         <img
@@ -103,7 +103,10 @@
         />
 
         <!-- Services section -->
-        <div id="title-text" class="flex flex-col space-y-6 w-3/4">
+        <div
+          id="title-text"
+          class="flex flex-col space-y-6 w-3/4 relative z-10"
+        >
           <div class="flex flex-col items-center gap-4">
             <h2 class="font-ubuntu text-3xl">Our services</h2>
             <div class="w-12 border border-solid border-black h-0 m-0"></div>
@@ -117,26 +120,25 @@
             for your health
           </p>
         </div>
+
         <div
           id="card-container"
-          class="flex flex-col gap-6 items-center md:grid md:grid-cols-2 md: mx-auto lg:grid-cols-3"
+          class="flex flex-col space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:w-full items-stretch"
         >
           <div
             id="card"
-            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-8 relative z-10 bg-white max-w-sm md:w-80 md:text-left md:mx-0 md:shadow-md md:h-full"
+            class="relative z-10 bg-white rounded-2xl shadow-sm md:shadow-lg flex flex-col space-y-8 p-4 w-80 text-left h-full"
           >
-            <div class="flex flex-1 md:h-2/3">
+            <div class="flex flex-col md:flex-row">
               <img
-                src="./icons/search-doctor-icon.svg"
+                src="./img/search-doctor.png"
                 alt="search doctor"
-                class="w-30 mx-auto md:mx-0 object-contain"
+                class="self-center md:self-start"
               />
             </div>
-            <div
-              class="flex flex-1 md:h-1/2 flex-col justify-between space-y-8"
-            >
-              <h3 class="text-xl font-semibold">Search doctor</h3>
-              <p class="text-md text-secondary font-light">
+            <div class="flex flex-col space-y-8">
+              <h3 class="font-mulish text-3xl text-left">Search doctor</h3>
+              <p class="font-manrope font-thin text-secondary">
                 Choose your doctor from thousands of specialist, general, and
                 trusted hospitals
               </p>
@@ -145,18 +147,18 @@
 
           <div
             id="card"
-            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-8 relative z-10 bg-white max-w-sm md:w-80 md:text-left md:mx-0 md:shadow-md md:h-full"
+            class="relative z-10 bg-white rounded-2xl shadow-sm md:shadow-lg flex flex-col space-y-8 p-4 w-80 text-left h-full"
           >
-            <div class="flex flex-1 md:h-2/3">
+            <div class="flex flex-col md:flex-row">
               <img
-                src="./icons/online-pharma-icon.svg"
+                src="./img/online-pharma.png"
                 alt="online pharmacy"
-                class="mx-auto md:mx-0 object-contain"
+                class="self-center md:self-start"
               />
             </div>
-            <div class="flex flex-1 md:h-1/2 flex-col space-y-8">
-              <h3 class="text-xl font-semibold">Online pharmacy</h3>
-              <p class="text-md text-secondary font-light">
+            <div class="flex flex-col space-y-8">
+              <h3 class="font-mulish text-3xl text-left">Online Pharmacy</h3>
+              <p class="font-manrope font-thin text-secondary">
                 Buy your medicines with our mobile application with a simple
                 delivery system
               </p>
@@ -165,18 +167,18 @@
 
           <div
             id="card"
-            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-8 relative z-10 bg-white max-w-sm md:w-80 md:text-left md:mx-0 md:shadow-md md:h-full"
+            class="relative z-10 bg-white rounded-2xl shadow-sm md:shadow-lg flex flex-col space-y-8 p-4 w-80 text-left h-full"
           >
-            <div class="flex flex-1">
+            <div class="flex flex-col md:flex-row">
               <img
-                src="./icons/consultation-icon.svg"
+                src="./img/consultation.png"
                 alt="consultation"
-                class="w-30 mx-auto md:mx-0 object-contain"
+                class="self-center md:self-start"
               />
             </div>
-            <div class="flex flex-1 md:h-1/2 flex-col space-y-8">
-              <h3 class="text-xl font-semibold">Consultation</h3>
-              <p class="text-md text-secondary font-light">
+            <div class="flex flex-col space-y-8">
+              <h3 class="font-mulish text-3xl text-left">Consultation</h3>
+              <p class="font-manrope font-thin text-secondary">
                 Free consultation with our trusted doctors and get the best
                 recommendations
               </p>
@@ -185,38 +187,38 @@
 
           <div
             id="card"
-            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-8 relative z-10 bg-white max-w-sm md:w-80 md:text-left md:mx-0 md:shadow-md md:h-full"
+            class="relative z-10 bg-white rounded-2xl shadow-sm md:shadow-lg flex flex-col space-y-8 p-4 w-80 text-left h-full"
           >
-            <div class="flex flex-1 md:h-2/3">
+            <div class="flex flex-col md:flex-row">
               <img
-                src="./icons/details-icon.svg"
-                alt="details"
-                class="w-30 mx-auto md:mx-0"
+                src="./img/details.png"
+                alt="details info"
+                class="self-center md:self-start"
               />
             </div>
-            <div class="flex flex-1 md:h-1/2 flex-col space-y-8">
-              <h3 class="text-xl font-semibold">Details info</h3>
-              <p class="text-md text-secondary font-light">
+            <div class="flex flex-col space-y-8">
+              <h3 class="font-mulish text-3xl text-left">Details info</h3>
+              <p class="font-manrope font-thin text-secondary">
                 Free consultation with our trusted doctors and get the best
-                recommendations
+                recomendations
               </p>
             </div>
           </div>
 
           <div
             id="card"
-            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-8 relative z-10 bg-white max-w-sm md:w-80 md:text-left md:mx-0 md:shadow-md md:h-full"
+            class="relative z-10 bg-white rounded-2xl shadow-sm md:shadow-lg flex flex-col space-y-8 p-4 w-80 text-left h-full"
           >
-            <div class="flex flex-1 md:h-2/3">
+            <div class="flex flex-col md:flex-row">
               <img
-                src="./icons/emergency-care-icon.svg"
+                src="./img/emergency-care.png"
                 alt="emergency care"
-                class="w-30 mx-auto md:mx-0"
+                class="self-center md:self-start"
               />
             </div>
-            <div class="flex flex-1 md:h-1/2 flex-col space-y-8">
-              <h3 class="text-xl font-semibold">Emergency care</h3>
-              <p class="text-md text-secondary font-light">
+            <div class="flex flex-col space-y-8">
+              <h3 class="font-mulish text-3xl text-left">Emergency care</h3>
+              <p class="font-manrope font-thin text-secondary">
                 You can get 24/7 urgent care for yourself or your children and
                 your lovely family
               </p>
@@ -225,18 +227,18 @@
 
           <div
             id="card"
-            class="flex flex-col w-2/3 rounded-2xl text-start shadow-sm p-4 space-y-8 relative z-10 bg-white max-w-sm md:w-80 md:text-left md:mx-0 md:shadow-md md:h-full"
+            class="relative z-10 bg-white rounded-2xl shadow-sm md:shadow-lg flex flex-col space-y-8 p-4 w-80 text-left h-full"
           >
-            <div class="flex flex-1">
+            <div class="flex flex-col md:flex-row">
               <img
-                src="./icons/tracking-icon.svg"
+                src="./img/tracking.png"
                 alt="tracking"
-                class="w-30 mx-auto md:mx-0"
+                class="self-center md:self-start"
               />
             </div>
-            <div class="flex flex-1 flex-col space-y-8">
-              <h3 class="text-xl font-semibold">Tracking</h3>
-              <p class="text-md text-secondary font-light">
+            <div class="flex flex-col space-y-8">
+              <h3 class="font-mulish text-3xl text-left">Tracking</h3>
+              <p class="font-manrope font-thin text-secondary">
                 Track and save your medical history and health data
               </p>
             </div>
@@ -250,6 +252,7 @@
         </button>
       </section>
 
+      <!-- ARTICLES SECTION -->
       <section
         id="articles"
         class="w-full p-6 flex flex-col items-center justify-center text-center space-y-14 relative"
